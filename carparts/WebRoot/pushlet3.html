@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+	<link type="text/css" href="style.css" rel="stylesheet">
+	<script type="text/javascript" src="ajax-pushlet-client.js"></script>
+	<title>推送消息给仓库二保管员</title>
+</head>
+<body>
+	<div style="margin-left:auto;margin-right:auto;margin-top:5em;width:18em">
+	<form method="post" action="PushletServlet1">
+		<label for="msgsubject">请输入消息主题:</label><br><br>
+		<input type="text" name="msgsubject"style="width:299px;height:2em"><br><br>
+		<label for="msgcont">请输入消息内容:</label><br><br>
+		<textarea rows="10" cols="40" name="msgcont"></textarea><br><br>
+		<input type="submit" value="推送给仓库二保管员" style="width:299px;height:3em">
+		<br>
+		<br>
+		<p style="margin-left:auto;margin-right:auto;width:7em"><a href="manager.html">返回主页面</a></p>
+	</form>
+	</div>
+</body>
+</html>

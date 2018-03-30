@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="content-type" content="text/html; charset=GBK">
+    <title>添加汽车零配件信息</title>
+  </head>
+  
+  <body>
+   <form action="/carparts/add.do" method="post">
+    	<table  border=1>
+    		<caption>添加零配件信息</caption>
+    		<tr>
+    			<th>名称：</th>
+    			<td><input name="partsname" type="text"></td>
+    		</tr>
+    		<tr>
+    			<th>数量：</th>
+    			<td><input name="partsnum" type="text"></td>
+    		</tr>
+    		<tr>
+    			<th>单位：</th>
+    			<td><input name="partsunit" type="text"></td>
+    		</tr>
+    		<tr>
+    			<th>入库日期：</th>
+    			<td><input name="putawaydate" type="text"></td>
+    		</tr>
+    		<tr>
+    			<th>价格：</th>
+    			<td><input name="partsprice" type="text"></td>
+    		</tr>
+    		<tr>
+    			<th>生产商：</th>
+    			<td><input name="manufactuper" type="text"></td>
+    		</tr>
+    		<tr>
+    			<th>生产日期：</th>
+    			<td><input name="productiondate" type="text"></td>
+    		</tr>
+    		<tr>
+    			<th>位置：</th>
+    			<td><input name="location" type="text"></td>
+    		</tr>
+    		<tr>
+    			<th colspan="2" style="text-align:center">
+    			<input type="submit" name="submit" value="添加">
+    			<input type="reset"  value="重置">
+    			</th>
+    		</tr>
+    	</table>
+    </form>
+  </body>
+</html>
