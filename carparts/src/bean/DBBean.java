@@ -5,7 +5,7 @@ public class DBBean{
 	private String driverStr="com.microsoft.sqlserver.jdbc.SQLServerDriver";
 	private String connStr="jdbc:sqlserver://localhost:1433;databasename=CARPARTS";
 	private String dbusername="sa";
-	private String dbpassword="u66Jhh";
+	private String dbpassword="password";
 	private Connection conn=null;
 	private Statement stmt=null;
 	public DBBean(){
@@ -14,20 +14,20 @@ public class DBBean{
 			conn=DriverManager.getConnection(connStr,dbusername,dbpassword);
 			stmt=conn.createStatement();
 		}
-		catch(Exception ex){System.out.println("ÎŞ·¨Í¬Êı¾İ¿â½¨Á¢Á¬½Ó£¡");}
+		catch(Exception ex){System.out.println("æ— æ³•åŒæ•°æ®åº“å»ºç«‹è¿æ¥ï¼");}
 	}
 	
 	public int executeUpdate(String s){
 		int result=0;
 		try{result=stmt.executeUpdate(s);}
-		catch(Exception ex){System.out.println("Ö´ĞĞ¸üĞÂ´íÎó£¡");}
+		catch(Exception ex){System.out.println("æ‰§è¡Œæ›´æ–°é”™è¯¯ï¼");}
 		return result;
 	}
 	
 	public ResultSet executeQuery(String s){
 		ResultSet rs=null;
 		try{rs=stmt.executeQuery(s);}
-		catch(Exception ex){System.out.println("Ö´ĞĞ²éÑ¯´íÎó£¡");}
+		catch(Exception ex){System.out.println("æ‰§è¡ŒæŸ¥è¯¢é”™è¯¯ï¼");}
 		return rs;
 	}
 	
